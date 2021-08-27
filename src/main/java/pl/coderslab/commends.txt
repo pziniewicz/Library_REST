@@ -1,0 +1,7 @@
+ curl -X GET -i  http://localhost:8080/books
+
+ curl -X DELETE -i  http://localhost:8080/books/5
+
+ curl -X PUT -i -H "Content-Type: application/json" -d '{"id": 4,"isbn":"1111111","title":"Edited", "publisher":"Edited", "type":"programming", "author":"Bruce Eckel"}' http://localhost:8080/books/4
+
+ curl -X GET -i  http://localhost:8080/books/3
